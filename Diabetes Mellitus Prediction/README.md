@@ -1,16 +1,23 @@
 # Predict Diabetes Mellitus
 * Predicted whether a patient admited to ICU(Intensive Care Unit) has diabetes mellitus to help hospitals administer the appropriate medical treatment
-* Cleaned the data, removed or imputed missing values, analysed relationships between variables and target variables. 
+* Cleaned the data, removed or imputed missing values, analysed relationships between variables and target variables
 * Engineered features 
-* Created a SMOTE dataset to balance the minority class 
+* Performed SMOTE to balance the class distribution 
 * Optimised Xgboost model using GridsearchCV to find best parameters 
 
 _This analysis was done as part of the WIDS (Women in Data Science) kaggle competition and represents the collaborative effort of the team I was part of._
 
+# Code and Resources 
+- **Python Version:** 3.7
+- **Packages:** pandas, numpy, sklearn, matplotlib, seaborn, shap
+- **RandomizedSearch:** https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74 
+- **Feature Engineering:** https://www.kaggle.com/jayjay75/3rd-place-nn-wids2020?scriptVersionId=29209297
+- **SMOTE**: https://towardsdatascience.com/how-to-effortlessly-handle-class-imbalance-with-python-and-smote-9b715ca8e5a7
 
 # Data Cleaning 
 * The data for this problem is provided by MIT’s GOSSIS (Global Open Source Severity of Illness Score)initiative. It contains: 180 features and the target variable 'diabetes mellitus'. 
-* _Link to dataset: https://www.kaggle.com/c/widsdatathon2021/data_
+* Link to dataset: https://www.kaggle.com/c/widsdatathon2021/data
+
 
 Data Cleaning approach:
 * We have an imbalanced dataset, diabetes mellitus accounts only 21,6% of the datapoints from the dataset.
@@ -32,9 +39,10 @@ Data Cleaning approach:
 
 # Model Building
 * encoded categorical variables by performing dummy encoding 
-* created SMOTE dataset to balance the minority class 
+* performed SMOTE to balance the minority class 
 * split the data into train and tests sets with a test size of 20%
-* picked XGBoost for data modelling because it performs well on imbalance datasets and can pick up well non-linear relationships
+* run 3 different algorithms used for classification problems: Logistic Regression, XGBoost and Random Forrest. 
+* Fine tuned the Random Forrest model as it outperformed the rest 
 
 # Model Performance 
 * achieved an accuracy of 86,6 on test set
