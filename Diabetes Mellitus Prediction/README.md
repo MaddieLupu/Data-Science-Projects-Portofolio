@@ -47,8 +47,8 @@ Data Cleaning approach:
 * Fine tuned the Random Forrest and XGBoost models as these outperformed the Logistic Regression
 
 # Model Performance 
-* Random Forest Model achieved a better performance than the XGboost. 
-* The model achieved an accuracy of 78% which means it predicts correctly 78% of the cases. 
+* Random Forest Model achieved a better performance than the XGboost
+* The model achieved an accuracy of 78% which means it predicts correctly 78% of the cases
 * 61% recall score which means the model correctly identifies 61% of all diabetes mellitus
 * 50% precision which means when it predicts diabetes mellitus as positive, it is correct 50% of the time
 <img width="492" alt="image" src="https://user-images.githubusercontent.com/79809854/119718481-8952af00-be5f-11eb-8788-c0c5038b67b6.png">
