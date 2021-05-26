@@ -1,11 +1,12 @@
 # Predict Diabetes Mellitus
-* Predicted whether a patient admited to ICU(Intensive Care Unit) has diabetes mellitus to help hospitals administer the appropriate medical treatment
+* Predicted whether a patient admited to ICU(Intensive Care Unit) has diabetes mellitus or not to help hospitals administer appropriate medical treatment
 * Cleaned the data, removed or imputed missing values, analysed relationships between variables and target variables
 * Engineered features 
 * Performed SMOTE to balance the class distribution 
-* Optimised Xgboost model using GridsearchCV to find best parameters 
+* Applied 3 models - Logistic Regresion, XGBoost and Random Forest
+* Optimised Xgboost and Random Forest models using GridSearchCV 
 
-_This analysis was done as part of the WIDS (Women in Data Science) kaggle competition and represents the collaborative effort of the team I was part of._
+_This analysis was done for WIDS (Women in Data Science) kaggle competition and represents the collaborative effort of the team I was part of._
 
 # Code and Resources 
 - **Python Version:** 3.7
@@ -17,6 +18,7 @@ _This analysis was done as part of the WIDS (Women in Data Science) kaggle compe
 # Data Cleaning 
 * The data for this problem is provided by MIT’s GOSSIS (Global Open Source Severity of Illness Score)initiative. It contains: 180 features and the target variable 'diabetes mellitus'. 
 * Link to dataset: https://www.kaggle.com/c/widsdatathon2021/data
+
 
 
 Data Cleaning approach:
@@ -41,16 +43,17 @@ Data Cleaning approach:
 * encoded categorical variables by performing dummy encoding 
 * performed SMOTE to balance the minority class 
 * split the data into train and tests sets with a test size of 20%
-* run 3 different algorithms used for classification problems: Logistic Regression, XGBoost and Random Forrest. 
-* Fine tuned the Random Forrest model as it outperformed the rest 
+* ran 3 different algorithms used for classification problems: Logistic Regression, XGBoost and Random Forrest. 
+* Fine tuned the Random Forrest and XGBoost models as these outperformed the Logistic Regression
 
 # Model Performance 
-* achieved an accuracy of 86,6 on test set
+* Random Forest Model achieved a better performance than the XGboost with a higher recall score which means the model correctly identifies 61% of all diabetes mellitus. 
+<img width="492" alt="image" src="https://user-images.githubusercontent.com/79809854/119718481-8952af00-be5f-11eb-8788-c0c5038b67b6.png">
+
+# Feature Importance 
 * performed feature importance with shap 
-<img width="493" alt="image" src="https://user-images.githubusercontent.com/79809854/117859206-9c258b00-b286-11eb-8980-b2664cd44110.png"> 
-<img width="432" alt="image" src="https://user-images.githubusercontent.com/79809854/117859256-a9427a00-b286-11eb-962d-970afe60ee53.png">
-<img width="705" alt="image" src="https://user-images.githubusercontent.com/79809854/117859587-1c4bf080-b287-11eb-9ec7-8835bce18c00.png">
-<img width="705" alt="image" src="https://user-images.githubusercontent.com/79809854/117859419-ddb63600-b286-11eb-9799-ad94f2278e2f.png">
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/79809854/119719424-aa67cf80-be60-11eb-8e96-c2e79fb37f79.png">
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/79809854/119719463-b358a100-be60-11eb-9bfd-cdbe573a5413.png">
 
 
 
