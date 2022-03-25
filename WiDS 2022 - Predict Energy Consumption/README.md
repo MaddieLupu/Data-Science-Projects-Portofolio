@@ -20,7 +20,7 @@ Competition link to learn more: https://www.kaggle.com/competitions/widsdatathon
 - performed log transformation on numerical skewed data
 
 ## Exploratory Data Analysis
-- visualised relationships between categorical data types such as facility and building types (Fig. 1)
+- visualised relationships between categorical data types and target variable (Fig. 1)
 - observed numerical variables'distribution (Fig. 2)
 - visualised relationships between numerical variables and target variable (Fig. 3)
 
