@@ -16,10 +16,8 @@ Competition link to learn more: https://www.kaggle.com/competitions/widsdatathon
 - imputed missing values with the mean of each variable
 - derived new features such as a new type of building
 - analysed relationships between variables and target variables
-- removeed multicollinear variables
+- removed multicollinear variables
 - performed log transformation on numerical skewed data
-- encoded categorical features 
-
 
 ## Exploratory Data Analysis
 - visualised relationships between categorical data types such as facility and building types (Fig. 1)
@@ -36,11 +34,11 @@ Competition link to learn more: https://www.kaggle.com/competitions/widsdatathon
 - encoded categorical variables by performing label encoding 
 - performed feature scaling
 - split the data into train and tests sets with a test size of 20%
-- applied a linear regression and light GBM algorithm
-- fine tuned the light GBM algorithm as this outperformed the linear regression
+- applied a Linear regression and Light GBM algorithm
+- fine tuned the Light GBM algorithm as this outperformed the linear regression
 
 ## Model Performance 
-* The model achieved a RMSE score of 36.98
+* the Light GBM model achieved a RMSE score of 36.98
 <img width="397" alt="image" src="https://user-images.githubusercontent.com/79809854/160155332-bad39242-d3e8-4459-b114-77e8fae0fcc0.png">
 (Picture with model performance before tuning)
 
