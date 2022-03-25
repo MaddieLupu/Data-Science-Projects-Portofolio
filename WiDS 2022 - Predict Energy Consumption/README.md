@@ -1,4 +1,4 @@
-# WiDS 2020 Predict Energy Consumption 
+# WiDS 2022 Predict Building Energy Consumption 
 
 This year WiDS challenge was to predict building energy consumption to help policymakers target retrofitting efforts to maximize emissions reductions.
 The WiDS Datathon dataset was created in collaboration with Climate Change AI (CCAI) and Lawrence Berkeley National Laboratory (Berkeley Lab) and contains data around weather temperatures, building types, sector, year, energy star rating and others. 
